@@ -7,21 +7,22 @@ export default function App() {
     </div>
   );
 }
-const Garage = (a) => {
+const Garage = () => {
   return (
-    <div>
+    <div className="Garage">
       <Voiture name="ODI" speed=" 200" hp=" 150" />
-      <Voiture name="BMW " speed=" 100" hp=" 100" />
-      <h1>ma voiture est une</h1>
+      <Voiture name="BMW " speed=" 210" hp=" 100" />
+      <Voiture name="TOYOTA " speed=" 300" hp=" 200" />
     </div>
   );
 };
 function Voiture(props) {
   return (
-    <div>
-      {props.name}
-      {props.speed}
-      {props.hp}
+    <div className="Voiture">
+      <h3>Nouvelle Voiture</h3>
+      <p>Ma voiture est une {props.name}</p>
+      <p>Avec une vitesse de {props.speed} km</p>
+      <p>Et HP : {props.hp}</p>
     </div>
   );
 }
