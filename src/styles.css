@@ -3,6 +3,14 @@
   text-align: center;
 }
 .Voiture {
-  color: blue;
   border: 2px solid black;
+}
+.Client1 {
+  color: brown;
+}
+.Client2 {
+  color: green;
+}
+.Client3 {
+  color: blue;
 }
